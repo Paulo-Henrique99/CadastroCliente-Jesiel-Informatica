@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class ="form-image">
+            <img src="img/Jesiel 2024 2.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastro de clientes</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome Completo</label>
+                        <input type="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>  
+
+                    <div class="input-box">
+                        <label for="data_nascimento">Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="genero">Gênero</label>
+                        <div class="genero-input">
+                            <select name="genero" required>
+                                <option value="" disabled selected>Selecione o gênero</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+                            </select>
+                        </div>
+                    </div>
+                                    
+                    
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div> 
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input type="number" type="tel" name="number" placeholder="(xx) Xxxxx-xxxx" required>
+                    </div> 
+                    
+                    <div class="input-box">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" placeholder="Digite seu endereço" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" placeholder="Digite seu bairro" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" placeholder="Digite sua cidade" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="estado">Estado</label>
+                        <select name="estado" required>
+                            <option value="" disabled selected>Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+                       
+
+                <div class="opcoes-inputs">
+                    <div class="opcoes-title">
+                        <h6>Como você nos conheceu?</h6>
+                    </div>
+                
+                    <div class="opcoes-group">
+                        <div class="opcoes-input">
+                            <input type="radio" id="instagram" name="conheceu" value="Instagram">
+                            <label for="instagram">Instagram</label>
+                        </div>
+
+                        <div class="opcoes-input">
+                            <input type="radio" id="facebook" name="conheceu" value="Facebook">
+                            <label for="facebook">Facebook</label>
+                        </div>
+                
+                        <div class="opcoes-input">
+                            <input type="radio" id="indicacao" name="conheceu" value="Indicação">
+                            <label for="indicacao">Indicação</label>
+                        </div>
+                
+                        <div class="opcoes-input">
+                            <input type="radio" id="pesquisa" name="conheceu" value="Pesquisa no Google">
+                            <label for="pesquisa">Pesquisa no Google</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="continue-button">
+                    <button type="button" onclick="enviarMensagem()">Enviar para Whatsapp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="script/script.js"></script>
+</body>
+
+</html>
